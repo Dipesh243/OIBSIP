@@ -1,0 +1,423 @@
+
+body,
+h1,
+p,
+a {
+    margin: 0;
+    padding: 0;
+}
+h1{
+    animation: glitchEffect 1s ease-in-out infinite;
+}
+
+/* Define general styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Style the header and navigation */
+header {
+    background-color: black;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #fff;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.1s;
+    border-bottom: 3px solid #f06808;
+        border-radius: 20%;
+}
+.nav-links a:hover{
+    border-bottom: 3px solid white;
+    border-radius: 20%;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+}
+
+/* Style the hero section */
+.hero {
+    background-image: url('360_F_207459754_XZ4VRclGSmux91GZ0ukm4oOPcF8wkN08.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 640px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 0px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff5500;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #ff7700;
+}
+
+
+.feature {
+    padding: 40px;
+    background-color: #fff;
+    margin: 10px 30px;
+    margin-bottom: 0px;
+    border-radius: 20px;
+}
+
+.feature h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+
+}
+
+
+
+
+
+
+h2{
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline solid #ff5500;
+animation: glitchEffect 1s ease-in-out infinite;
+}
+
+
+/* Define the animation keyframes */
+@keyframes glitchEffect {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+        filter: none;
+    }
+
+    25% {
+        transform: translateX(-5px) rotate(-2deg);
+        opacity: 0.8;
+        filter: contrast(200%) saturate(150%);
+    }
+
+    50% {
+        transform: translateX(5px) rotate(2deg);
+        opacity: 0.8;
+        filter: contrast(150%) saturate(200%);
+    }
+
+    75% {
+        transform: translateX(-5px) rotate(-2deg);
+        opacity: 0.8;
+        filter: contrast(200%) saturate(150%);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+        filter: none;
+    }
+}
+
+
+
+
+
+
+.team-section {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.team-members {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.member-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #ccc;
+    
+}
+
+.member-details {
+    margin-left: 20px;
+}
+
+.member-details h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.designation {
+    font-weight: bold;
+    color: #777;
+}
+
+.description {
+    color: #555;
+}
+
+
+/* services container*/
+.cards {
+    background: fixed;
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+.card {
+
+    position: relative;
+    background:  white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border-right: 3px solid #f06808;
+    border-left: 3px solid #f06808;
+    margin: 30px;
+    color: black;
+
+}
+
+.card:hover {
+    box-shadow: 50px 30px 60px black;
+    transition: 0.5s;
+
+    transition: 0.5s;
+}
+
+.cards .card .content {
+    text-align: center;
+
+}
+
+.card img {
+    border-radius: 30px;
+    width: 100%;
+    height: 200px;
+
+}
+
+.cbtn {
+    margin-top: 4%;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.0);
+    border-radius: 8px;
+    background-color: #ff7700;
+    border: 3px solid #ff7700;
+    height: 40px;
+    color: white;
+}
+
+.cbtn a {
+    padding: 4px;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.footer-top h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-section p,
+.social-links ul li a {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.social-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.social-links ul li {
+    margin-right: 10px;
+}
+
+.message-block form input,
+.message-block form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.message-block form button {
+    background-color: #ff5500;
+    color:
+
+}
+
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: none;
+    color: white;
+}
+
+.fa-twitter {
+    background: none;
+    color: white;
+}
+@media (max-width: 768px) {
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+
+
+
+
+@media (max-width: 768px) {
+    .service {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+.header-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 48px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    animation: headerAnimation 1s ease-in-out forwards;
+    }
+@keyframes headerAnimation {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
